@@ -1,0 +1,36 @@
+.unit_right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.unit_right button {
+  background: #2196f3;
+  border-radius: 5px;
+  width: 130px;
+}
+.unit_right button:hover {
+  color: rgb(27, 27, 27);
+}
+.unit_right #delete_btn {
+  background: rgb(250, 55, 55);
+}
+
+.unit_lessons_holder {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.unit_lessons_holder a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+.unit_lessons_holder a:hover {
+  color: #2196f3;
+}/*# sourceMappingURL=unitPage.css.map */

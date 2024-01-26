@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./styles/style.css" rel="stylesheet" />
+		<link href="./styles/index.css" rel="stylesheet" />
+		<link href="./styles/courseInfo.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="sub_header">
+				<div class="sub_header_left_holder">
+					<div class="mobile_ham" onclick="slideMenu()">
+						<img
+							id="ham_icon"
+							src="https://img.icons8.com/android/96/000000/menu.png"
+						/>
+					</div>
+					<img src="/assets/ts-logo.svg" alt="Logo" />
+				</div>
+				<div class="sub_header_right_holder"></div>
+			</div>
+		</header>
+		<div class="whole-body">
+			<aside>
+				<div class="title">
+					<h2>Course Settings</h2>
+				</div>
+				<div class="menu_item">
+					<a class='item' href='/'>
+						<span>
+							<img src="/assets/icon.svg" alt="icons" />
+						</span>
+						<p>Course Details</p>
+					</a>
+
+					<a class='item' href='/coursedescription'>
+						<span>
+							<img src="/assets/icon.svg" alt="icons" />
+						</span>
+						<p>Course Description</p>
+					</a>
+
+					<a class='item' href='/courseinfo' id='menuItemActive'>
+						<span>
+							<img src="/assets/icon.svg" alt="icons" />
+						</span>
+						<p>Course Info</p>
+					</a>
+					<div class="title">
+						<h2>Units and Lessons</h2>
+					</div>
+					<button class="commonButton">Add unit</button>
+					<a class='item' href='/unitpage'>
+						<p>object oriented programming</p>
+					</a>
+					<a class='item' href='/unitpage'>
+						<p>Variables</p>
+					</a>
+					<a class='item' href='/unitpage'>
+						<p>Data Types</p>
+					</a>
+				</div>
+			</aside>
+
+			<section class="max_width_holder">
+				<section class="page_content_holder">
+					<div class="path_header">
+						<h1>Course Info</h1>
+					</div>
+					<div class="course_details_header">
+						<h1>Course Info</h1>
+					</div>
+					<div class="info_holder">
+						<div class="info_header">
+							<h1>Announcement</h1>
+						</div>
+						<div class="info_points_holder">
+							<div class="info_item">
+								<div class="info_header">
+									<h1>Announcement 1</h1>
+								</div>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Voluptatibus fugit officia asperiores magnam eius hic
+									doloremque aut error modi, eaque consequatur totam ipsam
+									repellat. Autem dicta delectus quis ullam eius.
+								</p>
+							</div>
+							<div class="info_item">
+								<div class="info_header">
+									<h1>Announcement 1</h1>
+								</div>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Voluptatibus fugit officia asperiores magnam eius hic
+									doloremque aut error modi, eaque consequatur totam ipsam
+									repellat. Autem dicta delectus quis ullam eius.
+								</p>
+							</div>
+							<div class="info_item">
+								<div class="info_header">
+									<h1>Announcement 1</h1>
+								</div>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Voluptatibus fugit officia asperiores magnam eius hic
+									doloremque aut error modi, eaque consequatur totam ipsam
+									repellat. Autem dicta delectus quis ullam eius.
+								</p>
+							</div>
+						</div>
+						<div class="container">
+							<h2>Frequently Asked Questions</h2>
+							<div class="accordion">
+								<div class="accordion-item">
+									<button id="accordion-button-1" aria-expanded="false">
+										<span class="accordion-title"
+											>Why is the moon sometimes out during the day?</span
+										>
+										<span class="icon" aria-hidden="true"></span>
+									</button>
+									<div class="accordion-content">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+											pretium viverra suspendisse potenti.
+										</p>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<button id="accordion-button-2" aria-expanded="false">
+										<span class="accordion-title">Why is the sky blue?</span>
+										<span class="icon" aria-hidden="true"></span>
+									</button>
+									<div class="accordion-content">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+											pretium viverra suspendisse potenti.
+										</p>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<button id="accordion-button-3" aria-expanded="false">
+										<span class="accordion-title"
+											>Will we ever discover aliens?</span
+										>
+										<span class="icon" aria-hidden="true"></span>
+									</button>
+									<div class="accordion-content">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+											pretium viverra suspendisse potenti.
+										</p>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<button id="accordion-button-4" aria-expanded="false">
+										<span class="accordion-title"
+											>How much does the Earth weigh?</span
+										>
+										<span class="icon" aria-hidden="true"></span>
+									</button>
+									<div class="accordion-content">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+											pretium viverra suspendisse potenti.
+										</p>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<button id="accordion-button-5" aria-expanded="false">
+										<span class="accordion-title"
+											>How do airplanes stay up?</span
+										>
+										<span class="icon" aria-hidden="true"></span>
+									</button>
+									<div class="accordion-content">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+											pretium viverra suspendisse potenti.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+
+		<script src="./app.js"></script>
+		<script>
+			//----------------------FAQ section
+			const items = document.querySelectorAll('.accordion button');
+
+			function toggleAccordion() {
+				const itemToggle = this.getAttribute('aria-expanded');
+
+				for (i = 0; i < items.length; i++) {
+					items[i].setAttribute('aria-expanded', 'false');
+				}
+
+				if (itemToggle == 'false') {
+					this.setAttribute('aria-expanded', 'true');
+				}
+			}
+
+			items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+			//------------------------------------------------------
+		</script>
+	</body>
+</html>

@@ -1,0 +1,143 @@
+.page_content_holder {
+	position: relative;
+	padding: 0 0 20px;
+}
+
+
+
+.course_edit_form_holder {
+	width: 100%;
+	display: grid;
+	place-items: center;
+	.card-form {
+		width: 70%;
+		margin-top: 20px;
+	}
+
+	.input {
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		position: relative;
+		padding-top: 1.5rem;
+		& + .input {
+			margin-top: 1.5rem;
+		}
+	}
+
+	.input-label {
+		color: #8597a3;
+		position: absolute;
+		top: 1.5rem;
+		transition: 0.25s ease;
+	}
+	label {
+		color: #8597a3;
+	}
+	.input-field {
+		border: 0;
+		z-index: 1;
+		background-color: transparent;
+		border-bottom: 2px solid #eee;
+		font: inherit;
+		font-size: 1.125rem;
+		padding: 0.25rem 0;
+		&:focus,
+		&:valid {
+			outline: 0;
+			border-bottom-color: #6658d3;
+			& + .input-label {
+				color: #6658d3;
+				transform: translateY(-1.5rem);
+			}
+		}
+	}
+
+	.action {
+		margin-top: 2rem;
+	}
+
+	.action-button {
+		font: inherit;
+		font-size: 1.25rem;
+		padding: 0.3em;
+		width: 150px;
+		font-weight: 500;
+		background-color: #6658d3;
+		border-radius: 6px;
+		color: #fff;
+		cursor: pointer;
+		border: 0;
+		transition: all 0.5s ease;
+		&:hover {
+			color: rgb(153, 153, 153);
+			background: #004b88;
+		}
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	.card-info {
+		padding: 1rem 1rem;
+		text-align: center;
+		font-size: 0.875rem;
+		color: #8597a3;
+		a {
+			display: block;
+			color: #6658d3;
+			text-decoration: none;
+		}
+	}
+}
+
+.form-input {
+	width: 350px;
+	padding: 10px 0;
+	margin: 5px 0;
+}
+.form-input h1 {
+	font-weight: 500;
+	font-size: 15.5px;
+	margin-bottom: 10px;
+	color: #8597a3;
+}
+.form-input input {
+	display: none;
+}
+.form-input label {
+	display: block;
+	width: 140px;
+	height: 35px;
+	display: grid;
+	place-items: center;
+	background: #1172c2;
+
+	color: #fff;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: Uppercase;
+	font-weight: 600;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	&:hover {
+		color: rgb(153, 153, 153);
+		background: #004b88;
+	}
+}
+
+.form-input img {
+	width: 100%;
+	display: none;
+
+	margin-bottom: 30px;
+}
+select {
+	outline: none;
+	padding: 10px;
+	margin-top: 10px;
+	font-weight: 500;
+	font-size: 1rem;
+	border-color: #c9c9c9;
+}

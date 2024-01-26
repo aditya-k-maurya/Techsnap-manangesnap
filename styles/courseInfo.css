@@ -1,0 +1,142 @@
+.info_holder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 20px;
+}
+
+.info_header {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+
+.info_points_holder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.info_item {
+  width: 100%;
+  min-height: 100px;
+  background: rgba(206, 206, 206, 0.5019607843);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 10px;
+  margin: 10px 0px;
+}
+.info_item .info_header h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.info_item p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.container h2 {
+  margin: 20px auto;
+}
+.container .accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.container .accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #03b5d2;
+}
+.container .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  padding: 1em 0.5em;
+  max-width: 100%;
+  width: 100%;
+  color: #000000;
+  font-size: 1.15rem;
+  font-weight: 500;
+  border: none;
+  background: rgba(206, 206, 206, 0.5019607843);
+  outline: none;
+}
+.container .accordion button:hover,
+.container .accordion button:focus {
+  cursor: pointer;
+  color: #414141;
+}
+.container .accordion button:hover::after,
+.container .accordion button:focus::after {
+  cursor: pointer;
+  color: #414141;
+  border: 1px solid #03b5d2;
+}
+.container .accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.container .accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.container .accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.container .accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.container .accordion button[aria-expanded=true] {
+  color: #03b5d2;
+}
+.container .accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.container .accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+  border: solid 1px rgb(214, 214, 214);
+  padding: 0 10px;
+}
+.container .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.container .accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}/*# sourceMappingURL=courseInfo.css.map */

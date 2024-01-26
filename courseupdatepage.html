@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./styles/style.css" rel="stylesheet" />
+		<link href="./styles/courseUpdatePage.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="sub_header">
+				<div class="sub_header_left_holder">
+					<div class="mobile_ham" onclick="slideMenu()">
+						<img
+							id="ham_icon"
+							src="https://img.icons8.com/android/96/000000/menu.png"
+						/>
+					</div>
+					<img src="/assets/ts-logo.svg" alt="Logo" />
+				</div>
+				<div class="sub_header_right_holder"></div>
+			</div>
+		</header>
+		<div class="whole-body">
+			<aside>
+				<div class="title">
+					<h2>Course Settings</h2>
+				</div>
+				<div class="menu_item">
+					<a class='item' href='/' id='menuItemActive'>
+						<span>
+							<img src="/assets/icon.svg" alt="icons" />
+						</span>
+						<p>Course Details</p>
+					</a>
+
+					<a class='item' href='/coursedescription'>
+						<span>
+							<img src="/assets/icon.svg" alt="icons" />
+						</span>
+						<p>Course Description</p>
+					</a>
+
+					<a class='item' href='/courseinfo'>
+						<span>
+							<img src="/assets/icon.svg" alt="icons" />
+						</span>
+						<p>Course Info</p>
+					</a>
+					<div class="title">
+						<h2>Units and Lessons</h2>
+					</div>
+					<button class="commonButton">Add unit</button>
+					<a class='item' href='/unitpage'>
+						<p>object oriented programming</p>
+					</a>
+					<a class='item' href='/unitpage'>
+						<p>Variables</p>
+					</a>
+					<a class='item' href='/unitpage'>
+						<p>Data Types</p>
+					</a>
+				</div>
+			</aside>
+
+			<section class="max_width_holder">
+				<section class="page_content_holder">
+					<div class="path_header">
+						<h1>Course Details >> Update</h1>
+					</div>
+					<div class="course_edit_form_holder">
+						<form class="card-form">
+							<div class="input">
+								<input type="text" class="input-field" required />
+								<label class="input-label">Course Title</label>
+							</div>
+							<div class="form-input">
+								<h1>Course Banner</h1>
+
+								<div class="preview">
+									<img id="file-ip-1-preview" />
+								</div>
+								<label for="file-ip-1">Upload Image</label>
+								<input
+									type="file"
+									id="file-ip-1"
+									accept="image/*"
+									onchange="showPreview(event);"
+								/>
+							</div>
+							<div class="input">
+								<textarea
+									type="text"
+									class="input-field"
+									rows="4"
+									required
+								></textarea>
+								<label class="input-label">Course overview</label>
+							</div>
+							<div class="input">
+								<input type="number" class="input-field" required />
+								<label class="input-label">Course price</label>
+							</div>
+							<div class="input">
+								<select name="level" id="level">
+									<option value="Beginner">Beginner</option>
+									<option value="Intermediate">Intermediate</option>
+									<option value="Advanced">Advanced</option>
+								</select>
+								<label class="input-lael">Course level</label>
+							</div>
+							<div class="action">
+								<button class="commonButton" class="action-button">Update</button>
+							</div>
+						</form>
+					</div>
+				</section>
+			</section>
+		</div>
+
+		<script src="./app.js"></script>
+		<script>
+			function showPreview(event) {
+				if (event.target.files.length > 0) {
+					var src = URL.createObjectURL(event.target.files[0]);
+					var preview = document.getElementById('file-ip-1-preview');
+					preview.src = src;
+					preview.style.display = 'block';
+				}
+			}
+		</script>
+	</body>
+</html>

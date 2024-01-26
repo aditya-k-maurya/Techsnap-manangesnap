@@ -1,0 +1,212 @@
+.page_content_holder {
+  position: relative;
+}
+
+.course_details_holder {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+@media (max-width: 800px) {
+  .course_details_holder {
+    flex-direction: column;
+  }
+}
+
+.course_details_header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background: #fff;
+  padding-left: 10px;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 800px) {
+  .course_details_header {
+    padding: 0 10px;
+  }
+  .course_details_header h1 {
+    font-size: 1.3rem;
+  }
+}
+.course_details_header h1 {
+  font-size: 1.5rem;
+}
+
+.course_details_left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .course_details_left {
+    width: 100%;
+  }
+}
+.course_details_left .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+.course_details_left .item h1 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0px 10px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.836);
+}
+.course_details_left .item #question {
+  min-width: 70px;
+  margin: 0px 20px 0 0;
+  color: #005eff;
+}
+
+.course_details_right {
+  width: 45%;
+  height: 100%;
+}
+@media (max-width: 800px) {
+  .course_details_right {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+.course_details_right img {
+  width: 100%;
+  min-height: 350px;
+}
+
+#mobile_btn {
+  display: none;
+  padding: 0 20px;
+  height: 35px;
+}
+@media (max-width: 800px) {
+  #mobile_btn {
+    display: block;
+  }
+}
+
+.popUpFormHolder {
+  width: 450px;
+  height: 500px;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 555;
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+@media (max-width: 800px) {
+  .popUpFormHolder {
+    width: 88vw;
+  }
+}
+.popUpFormHolder .card-form {
+  width: 80%;
+}
+.popUpFormHolder .card-form label {
+  color: #505050;
+}
+.popUpFormHolder .input {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem;
+  margin: 5px 0;
+}
+.popUpFormHolder .input-label {
+  color: #505050;
+  position: absolute;
+  top: 1.5rem;
+  transition: 0.25s ease;
+}
+.popUpFormHolder label {
+  color: #8597a3;
+}
+.popUpFormHolder .input-field {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(175, 175, 175);
+  font: inherit;
+  font-size: 1.125rem;
+  padding: 0.25rem 0;
+}
+.popUpFormHolder .input-field:focus, .popUpFormHolder .input-field:valid {
+  outline: 0;
+  border-bottom-color: #6658d3;
+}
+.popUpFormHolder .input-field:focus + .input-label, .popUpFormHolder .input-field:valid + .input-label {
+  color: #6658d3;
+  transform: translateY(-1.5rem);
+}
+.popUpFormHolder .action {
+  margin-top: 2rem;
+}
+.popUpFormHolder .action-button {
+  font: inherit;
+  margin: 0;
+  font-size: 1rem;
+  padding: 0px 20px;
+  height: 35px;
+  font-weight: 500;
+  background: #004b88;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  transition: all 0.5s ease;
+}
+.popUpFormHolder .action-button:hover {
+  background: #0065b8;
+}
+.popUpFormHolder .action-button:focus {
+  outline: 0;
+}
+.popUpFormHolder .card-info {
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #8597a3;
+}
+.popUpFormHolder .card-info a {
+  display: block;
+  color: #6658d3;
+  text-decoration: none;
+}
+.popUpFormHolder .popUpHeader {
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+.popUpFormHolder .popUpHeader h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.popUpFormHolder .popUpHeader h4 {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

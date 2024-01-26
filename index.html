@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./styles/style.css" rel="stylesheet" />
+		<link href="./styles/index.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="sub_header">
+				<div class="sub_header_left_holder">
+					<div class="mobile_ham" onclick="slideMenu()">
+						<img
+							id="ham_icon"
+							src="https://img.icons8.com/android/96/000000/menu.png"
+						/>
+					</div>
+					<img src="/assets/ts-logo.svg" alt="Logo" />
+				</div>
+				<div class="sub_header_right_holder"></div>
+			</div>
+		</header>
+		<div class="whole-body">
+			<aside>
+				<div class="title">
+					<h2>Course Settings</h2>
+				</div>
+				<div class="menu_item">
+					<a class='item' href='/' id='menuItemActive'>
+						<span>
+							<img src="/assets/icon.svg" alt="icons" />
+						</span>
+						<p>Course Details</p>
+					</a>
+
+					<a class='item' href='/coursedescription.html'>
+						<span>
+							<img src="/assets/icon.svg" alt="icons" />
+						</span>
+						<p>Course Description</p>
+					</a>
+
+					<a class='item' href='/courseinfo.html'>
+						<span>
+							<img src="/assets/icon.svg" alt="icons" />
+						</span>
+						<p>Course Info</p>
+					</a>
+					<div class="title">
+						<h2>Units and Lessons</h2>
+					</div>
+					<button class="commonButton" onclick="showPopUpForm()">
+						Add unit
+					</button>
+					<a class='item' href='/unitpage.html'>
+						<p>object oriented programming</p>
+					</a>
+					<a class='item' href='/unitpage.html'>
+						<p>Variables</p>
+					</a>
+					<a class='item' href='/unitpage.html'>
+						<p>Data Types</p>
+					</a>
+					<div class="title">
+						<h2>Course Statistics</h2>
+					</div>
+					<a class='item' href='/review'>
+						<p>Reviews</p>
+					</a>
+					<a class='item' href='/unitpage.html'>
+						<p>Testimonials</p>
+					</a>
+					<a class='item' href='/unitpage.html'>
+						<p>Rating</p>
+					</a>
+				</div>
+			</aside>
+
+			<section class="max_width_holder">
+				<div class="popUpFormHolder">
+					<div class="popUpHeader">
+						<h3>Create New Unit</h3>
+						<h4 onclick="closePopUpForm()">X</h4>
+					</div>
+					<form class="card-form">
+						<div class="input">
+							<input type="text" class="input-field" required />
+							<label class="input-label">Unit Title</label>
+						</div>
+
+						<div class="input">
+							<textarea
+								type="text"
+								class="input-field"
+								rows="2"
+								required
+							></textarea>
+							<label class="input-label">Unit Brief</label>
+						</div>
+						<div class="input">
+							<input type="date" class="input-field" required />
+							<label class="input-labl">Due</label>
+						</div>
+
+						<div class="action">
+							<button class="commonButton" class="action-button">
+								Add Unit
+							</button>
+						</div>
+					</form>
+				</div>
+				<section class="page_content_holder">
+					<div class="path_header">
+						<h1>Course Details</h1>
+					</div>
+					<div class="course_details_header">
+						<h1>Course Details</h1>
+						<button
+							id="mobile_btn"
+							class="commonButton"
+							onclick="window.location.href='courseUpdatePage.html'"
+						>
+							UPDATE
+						</button>
+					</div>
+					<div class="course_details_holder">
+						<div class="course_details_left">
+							<div class="item">
+								<h1 id="question">Title</h1>
+								<h1>:</h1>
+								<h1>Html</h1>
+							</div>
+							<div class="item">
+								<h1 id="question">Instructor</h1>
+								<h1>:</h1>
+								<h1>akhilsv</h1>
+							</div>
+							<div class="item">
+								<h1 id="question">Overview</h1>
+								<h1>:</h1>
+								<h1>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+									cumque dignissimos veniam ex? Minus, at libero corporis
+									voluptatem, animi nihil hic, eaque id exercitationem voluptas
+									dolorum adipisci nobis nostrum enim?
+								</h1>
+							</div>
+							<div class="item">
+								<h1 id="question">Duration</h1>
+								<h1>:</h1>
+								<h1>3 MONTHS</h1>
+							</div>
+							<div class="item">
+								<h1 id="question">Price</h1>
+								<h1>:</h1>
+								<h1>100$</h1>
+							</div>
+							<div class="item">
+								<h1 id="question">Level</h1>
+								<h1>:</h1>
+								<h1>Beginner</h1>
+							</div>
+						</div>
+						<div class="course_details_right">
+							<img
+								src="https://cdn.dribbble.com/users/8132/screenshots/7919843/media/c1e8f5214018b99cd0c801a455168346.png?compress=1&resize=400x300"
+								alt="course post"
+							/>
+						</div>
+					</div>
+					<button
+						class="commonButton"
+						onclick="window.location.href='courseUpdatePage.html'"
+					>
+						UPDATE
+					</button>
+				</section>
+			</section>
+		</div>
+		<script src="./javascript/app.js"></script>
+	</body>
+</html>
